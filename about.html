@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Md Mahmudul Hasan Miraj</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg2"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Go to home">
+      <div class="brand-badge">MM</div>
+      <div class="brand-text">
+        <div class="brand-name">Md Mahmudul Hasan Miraj</div>
+        <div class="brand-sub">AI automation • PHP & MySQL • Workflow builder</div>
+      </div>
+    </a>
+
+    <div class="nav-wrap">
+      <button onclick="toggleLanguage()" class="lang-btn">English | 한국어</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    
+    <nav class="nav" id="siteNav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-ko">홈</span></a>
+      <a class="active" href="about.html"><span class="lang-en">About</span><span class="lang-ko">소개</span></a>
+      <a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ko">기술</span></a>
+      <a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></a>
+      <a href="content.html"><span class="lang-en">Marketing (AI)</span><span class="lang-ko">마케팅 (AI)</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ko">연락처</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<section class="card reveal">
+  <div class="section-label"><span class="lang-en">About</span><span class="lang-ko">자기소개</span></div>
+  <h1 class="page-title"><span class="lang-en">Who I am</span><span class="lang-ko">저는 이런 사람입니다</span></h1>
+  
+  <div class="lang-en">
+      <p class="p">I’m <b>Md Mahmudul Hasan Miraj</b>, an AI & IT student in South Korea. I build practical systems: automations, backend utilities, and AI-enabled workflows that reduce manual work.</p>
+      <p class="p muted">I focus on reliability: clean data flow, error handling, and simple UX so tools actually get used.</p>
+  </div>
+  <div class="lang-ko">
+      <p class="p">반갑습니다. 저는 한국에서 유학 중인 AI 및 IT 전공생 <b>Md Mahmudul Hasan Miraj</b>입니다. 저는 단순 반복 업무를 줄여주는 자동화 시스템, 백엔드 유틸리티, 그리고 AI 기반 워크플로우를 개발합니다.</p>
+      <p class="p muted">제가 가장 중요하게 생각하는 것은 '신뢰성'입니다. 깔끔한 데이터 흐름, 철저한 에러 처리, 그리고 사용자가 실제로 편리하게 쓸 수 있는 UX를 지향합니다.</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card-soft">
+      <div class="h3"><span class="lang-en">Strengths</span><span class="lang-ko">강점</span></div>
+      <ul class="list lang-en">
+        <li>Automation engineering (webhooks, triggers, retries, logs)</li>
+        <li>PHP + MySQL backend development</li>
+        <li>AI integration patterns (RAG mindset, structured extraction)</li>
+      </ul>
+      <ul class="list lang-ko">
+        <li>자동화 엔지니어링 (웹훅, 트리거, 재시도 로직, 로그 관리)</li>
+        <li>PHP + MySQL 백엔드 개발</li>
+        <li>AI 통합 및 구현 (RAG, 정형 데이터 추출)</li>
+      </ul>
+    </div>
+    <div class="card-soft">
+      <div class="h3"><span class="lang-en">Photo</span><span class="lang-ko">사진</span></div>
+      <div class="profile-photo" style="margin-top:10px;"><img src="profile-hero.png" alt="Md Mahmudul Hasan Miraj" loading="lazy" /></div>
+    </div>
+    <div class="card-soft">
+      <div class="h3"><span class="lang-en">What I want</span><span class="lang-ko">희망 직무</span></div>
+      <ul class="list lang-en">
+        <li>Internship / part-time roles</li>
+        <li>Small-to-mid projects with real users</li>
+        <li>Teams that value clean systems & documentation</li>
+      </ul>
+      <ul class="list lang-ko">
+        <li>인턴십 또는 파트타임 (아르바이트)</li>
+        <li>실사용자가 있는 중소규모 프로젝트</li>
+        <li>체계적인 시스템과 문서를 중요시하는 팀</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <div class="vr-robot" id="vrRobot" role="button" tabindex="0"><div class="vr-face"><div class="vr-eye"></div><div class="vr-eye"></div><div class="vr-mouth"></div></div><div class="vr-badge">AI</div></div>
+  <div class="vr-pop" id="vrPop" aria-live="polite"><div class="vr-pop-title">Hi 👋 I’m Miraj’s assistant</div><div class="vr-pop-sub">Want voice help?</div><div class="vr-pop-actions"><button class="btn btn-primary btn-sm" id="vrYes" type="button">Yes</button><button class="btn btn-ghost btn-sm" id="vrNo" type="button">No</button></div></div>
+  <div class="vr-panel" id="vrPanel" aria-hidden="true">
+    <div class="vr-panel-card" role="dialog" aria-modal="true" aria-labelledby="vrTitle">
+      <div class="vr-panel-head">
+        <div><div class="vr-title" id="vrTitle">Miraj’s Voice Receptionist</div><div class="vr-sub">Ask anything • If you want to hire, I’ll collect details</div></div>
+        <button class="vr-x" id="vrClose" type="button">✕</button>
+      </div>
+      <div class="vr-log" id="vrLog"></div>
+      <div class="vr-row">
+        <button class="vr-btn" id="vrTalk" type="button">🎙️ Talk</button>
+        <button class="vr-btn" id="vrStop" type="button">⏹ Stop</button>
+        <button class="vr-btn vr-ghost" id="vrVoiceToggle" type="button">🔊 Voice: ON</button>
+        <button class="vr-btn vr-ghost" id="vrReset" type="button">↺ Reset</button>
+      </div>
+      <form class="vr-form" id="vrForm">
+        <div class="vr-grid">
+          <input class="vr-in" name="name" id="vrName" placeholder="Your name" required />
+          <input class="vr-in" name="email" id="vrEmail" placeholder="Your email" type="email" required />
+          <input class="vr-in" name="budget" id="vrBudget" placeholder="Budget (optional)" />
+        </div>
+        <textarea class="vr-in vr-ta" name="message" id="vrMessage" placeholder="What do you need? (project details)" required></textarea>
+        <input type="hidden" name="source" value="Portfolio Voice Receptionist" />
+        <input type="hidden" name="page" id="vrPage" />
+        <button class="vr-send" type="submit">Send to Miraj (Email)</button>
+        <div class="vr-note" id="vrNote"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="voice-bot.js"></script>
+</body>
+</html>

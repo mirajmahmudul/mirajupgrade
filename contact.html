@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Md Mahmudul Hasan Miraj</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg2"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Go to home">
+      <div class="brand-badge">MM</div>
+      <div class="brand-text">
+        <div class="brand-name">Md Mahmudul Hasan Miraj</div>
+        <div class="brand-sub">AI automation • PHP & MySQL • Workflow builder</div>
+      </div>
+    </a>
+
+    <div class="nav-wrap">
+      <button onclick="toggleLanguage()" class="lang-btn">English | 한국어</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    
+    <nav class="nav" id="siteNav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-ko">홈</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-ko">소개</span></a>
+      <a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ko">기술</span></a>
+      <a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></a>
+      <a href="content.html"><span class="lang-en">Marketing (AI)</span><span class="lang-ko">마케팅 (AI)</span></a>
+      <a class="active" href="contact.html"><span class="lang-en">Contact</span><span class="lang-ko">연락처</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<section class="card reveal">
+  <div class="section-label"><span class="lang-en">Contact</span><span class="lang-ko">연락하기</span></div>
+  <h1 class="page-title"><span class="lang-en">Let’s talk</span><span class="lang-ko">프로젝트 문의</span></h1>
+  <p class="p muted">
+      <span class="lang-en">Use this form, or click the robot and say “I want to hire you”.</span>
+      <span class="lang-ko">아래 양식을 작성하시거나, 우측 하단 로봇에게 "채용하고 싶어"라고 말해주세요.</span>
+  </p>
+
+  <form class="contact-form card-soft" action="https://formspree.io/f/xdkqjdnr" method="POST">
+    <div class="grid-2">
+      <input class="vr-in" name="name" placeholder="Name (이름)" required />
+      <input class="vr-in" name="email" placeholder="Email (이메일)" type="email" required />
+    </div>
+    <input class="vr-in" name="budget" placeholder="Budget (Optional - 예산)" />
+    <textarea class="vr-in vr-ta" name="message" placeholder="What do you need? (프로젝트 내용)" required></textarea>
+    <input type="hidden" name="source" value="Portfolio Contact Page" />
+    <button class="btn btn-primary" type="submit"><span class="lang-en">Send message</span><span class="lang-ko">메시지 보내기</span></button>
+  </form>
+</section>
+
+  </main>
+
+  <div class="vr-robot" id="vrRobot" role="button" tabindex="0"><div class="vr-face"><div class="vr-eye"></div><div class="vr-eye"></div><div class="vr-mouth"></div></div><div class="vr-badge">AI</div></div>
+  <div class="vr-pop" id="vrPop" aria-live="polite"><div class="vr-pop-title">Hi 👋 I’m Miraj’s assistant</div><div class="vr-pop-sub">Want voice help?</div><div class="vr-pop-actions"><button class="btn btn-primary btn-sm" id="vrYes" type="button">Yes</button><button class="btn btn-ghost btn-sm" id="vrNo" type="button">No</button></div></div>
+  <div class="vr-panel" id="vrPanel" aria-hidden="true">
+    <div class="vr-panel-card" role="dialog" aria-modal="true" aria-labelledby="vrTitle">
+      <div class="vr-panel-head">
+        <div><div class="vr-title" id="vrTitle">Miraj’s Voice Receptionist</div><div class="vr-sub">Ask anything • If you want to hire, I’ll collect details</div></div>
+        <button class="vr-x" id="vrClose" type="button">✕</button>
+      </div>
+      <div class="vr-log" id="vrLog"></div>
+      <div class="vr-row">
+        <button class="vr-btn" id="vrTalk" type="button">🎙️ Talk</button>
+        <button class="vr-btn" id="vrStop" type="button">⏹ Stop</button>
+        <button class="vr-btn vr-ghost" id="vrVoiceToggle" type="button">🔊 Voice: ON</button>
+        <button class="vr-btn vr-ghost" id="vrReset" type="button">↺ Reset</button>
+      </div>
+      <form class="vr-form" id="vrForm">
+        <div class="vr-grid">
+          <input class="vr-in" name="name" id="vrName" placeholder="Your name" required />
+          <input class="vr-in" name="email" id="vrEmail" placeholder="Your email" type="email" required />
+          <input class="vr-in" name="budget" id="vrBudget" placeholder="Budget (optional)" />
+        </div>
+        <textarea class="vr-in vr-ta" name="message" id="vrMessage" placeholder="What do you need? (project details)" required></textarea>
+        <input type="hidden" name="source" value="Portfolio Voice Receptionist" />
+        <input type="hidden" name="page" id="vrPage" />
+        <button class="vr-send" type="submit">Send to Miraj (Email)</button>
+        <div class="vr-note" id="vrNote"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="voice-bot.js"></script>
+</body>
+</html>

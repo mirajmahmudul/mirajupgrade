@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects • Md Mahmudul Hasan Miraj</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg2"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Go to home">
+      <div class="brand-badge">MM</div>
+      <div class="brand-text">
+        <div class="brand-name">Md Mahmudul Hasan Miraj</div>
+        <div class="brand-sub">AI automation • PHP & MySQL • Workflow builder</div>
+      </div>
+    </a>
+
+    <div class="nav-wrap">
+      <button onclick="toggleLanguage()" class="lang-btn">English | 한국어</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    
+    <nav class="nav" id="siteNav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-ko">홈</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-ko">소개</span></a>
+      <a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ko">기술</span></a>
+      <a class="active" href="projects.html"><span class="lang-en">Projects</span><span class="lang-ko">프로젝트</span></a>
+      <a href="content.html"><span class="lang-en">Marketing (AI)</span><span class="lang-ko">마케팅 (AI)</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ko">연락처</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<section class="card reveal">
+  <div class="section-label"><span class="lang-en">Real Automation Workflows</span><span class="lang-ko">실제 자동화 워크플로우</span></div>
+  <h1 class="page-title"><span class="lang-en">System Architecture & Builds</span><span class="lang-ko">시스템 아키텍처 및 구축 사례</span></h1>
+  <p class="p muted">
+      <span class="lang-en">Below are actual automation pipelines I have designed and deployed. These workflows handle data extraction, AI processing, and multi-platform publishing.</span>
+      <span class="lang-ko">제가 직접 설계하고 배포한 자동화 파이프라인입니다. 데이터 추출, AI 처리, 멀티 플랫폼 배포를 자동으로 수행합니다.</span>
+  </p>
+
+  <div class="project-grid">
+    
+    <article class="card-soft reveal">
+      <div class="project-media">
+        <img src="portfolio 1.png" alt="GitHub Trend Automation Workflow" loading="lazy" />
+      </div>
+      <div class="project-h"><span class="lang-en">GitHub Trend & Repo Summarizer</span><span class="lang-ko">GitHub 트렌드 및 리포지토리 요약 봇</span></div>
+      <div class="project-p">
+          <span class="lang-en">Complex pipeline that schedules triggers to fetch trending repositories, filters push history, generates AI summaries (Markdown), and delivers reports via Email and File creation.</span>
+          <span class="lang-ko">트렌딩 리포지토리를 자동 수집하고 AI로 요약(Markdown)하여 이메일 및 파일로 보고서를 생성하는 복합 파이프라인입니다.</span>
+      </div>
+      <div class="chips"><span class="chip">OpenAI</span><span class="chip">GitHub API</span><span class="chip">Markdown Automation</span></div>
+    </article>
+
+    <article class="card-soft reveal">
+      <div class="project-media">
+        <img src="portfolio 2.png" alt="YouTube Video Automation Workflow" loading="lazy" />
+      </div>
+      <div class="project-h"><span class="lang-en">YouTube Video Summarizer & Discord Bot</span><span class="lang-ko">유튜브 비디오 요약 및 디스코드 알림 봇</span></div>
+      <div class="project-p">
+          <span class="lang-en">Watches for new video uploads, downloads metadata, generates an AI summary, translates it, and pushes a rich embed notification to a Discord Webhook.</span>
+          <span class="lang-ko">새 영상 업로드를 감지하여 메타데이터를 추출하고, AI 요약 및 번역 후 디스코드 웹훅으로 알림을 전송합니다.</span>
+      </div>
+      <div class="chips"><span class="chip">YouTube API</span><span class="chip">Whisper AI</span><span class="chip">Discord Webhooks</span></div>
+    </article>
+
+    <article class="card-soft reveal">
+      <div class="project-media">
+        <img src="port 3.png" alt="Comic Translation Workflow" loading="lazy" />
+      </div>
+      <div class="project-h"><span class="lang-en">Content Translation & Image Gen</span><span class="lang-ko">콘텐츠 번역 및 이미지 자동 생성</span></div>
+      <div class="project-p">
+          <span class="lang-en">Automated workflow that fetches media (Comics/Videos), performs AI translation, generates new descriptions, and rebuilds image assets automatically.</span>
+          <span class="lang-ko">미디어(만화/영상)를 가져와 AI 번역을 수행하고, 새로운 설명과 이미지를 자동으로 재생성하는 워크플로우입니다.</span>
+      </div>
+      <div class="chips"><span class="chip">Image Gen</span><span class="chip">Translation API</span><span class="chip">Automation</span></div>
+    </article>
+
+    <article class="card-soft reveal">
+      <div class="project-media">
+        <img src="portfolio 4.png" alt="Audio Processing Workflow" loading="lazy" />
+      </div>
+      <div class="project-h"><span class="lang-en">Meeting/Audio Transcription Pipeline</span><span class="lang-ko">오디오 트랜스크립션(받아쓰기) 파이프라인</span></div>
+      <div class="project-p">
+          <span class="lang-en">Ingests raw audio files, transcribes speech-to-text, generates concise summaries, merges transcripts, and emails the final report to stakeholders.</span>
+          <span class="lang-ko">오디오 파일을 STT(음성 텍스트 변환)로 처리하고 요약본을 생성하여 관계자에게 이메일로 리포트를 발송합니다.</span>
+      </div>
+      <div class="chips"><span class="chip">Speech-to-Text</span><span class="chip">Audio Processing</span><span class="chip">Email API</span></div>
+    </article>
+
+    <article class="card-soft reveal">
+      <div class="project-media">
+        <img src="portfolio 5.png" alt="PDF RAG Workflow" loading="lazy" />
+      </div>
+      <div class="project-h"><span class="lang-en">PDF Knowledge Base Builder (RAG)</span><span class="lang-ko">PDF 지식 베이스 구축 (RAG)</span></div>
+      <div class="project-p">
+          <span class="lang-en">Full RAG pipeline: Extracts text from PDFs, normalizes data, creates vector embeddings, and updates a knowledge database for AI querying.</span>
+          <span class="lang-ko">PDF에서 텍스트를 추출 및 정규화하고 벡터 임베딩을 생성하여 AI 검색용 지식 데이터베이스를 구축하는 RAG 파이프라인입니다.</span>
+      </div>
+      <div class="chips"><span class="chip">RAG</span><span class="chip">Vector DB</span><span class="chip">PDF Parsing</span></div>
+    </article>
+
+  </div>
+</section>
+
+  </main>
+
+  <div class="vr-robot" id="vrRobot" role="button" tabindex="0"><div class="vr-face"><div class="vr-eye"></div><div class="vr-eye"></div><div class="vr-mouth"></div></div><div class="vr-badge">AI</div></div>
+  <div class="vr-pop" id="vrPop" aria-live="polite"><div class="vr-pop-title">Hi 👋 I’m Miraj’s assistant</div><div class="vr-pop-sub">Want voice help?</div><div class="vr-pop-actions"><button class="btn btn-primary btn-sm" id="vrYes" type="button">Yes</button><button class="btn btn-ghost btn-sm" id="vrNo" type="button">No</button></div></div>
+  <div class="vr-panel" id="vrPanel" aria-hidden="true">
+    <div class="vr-panel-card" role="dialog" aria-modal="true" aria-labelledby="vrTitle">
+      <div class="vr-panel-head">
+        <div><div class="vr-title" id="vrTitle">Miraj’s Voice Receptionist</div><div class="vr-sub">Ask anything • If you want to hire, I’ll collect details</div></div>
+        <button class="vr-x" id="vrClose" type="button">✕</button>
+      </div>
+      <div class="vr-log" id="vrLog"></div>
+      <div class="vr-row">
+        <button class="vr-btn" id="vrTalk" type="button">🎙️ Talk</button>
+        <button class="vr-btn" id="vrStop" type="button">⏹ Stop</button>
+        <button class="vr-btn vr-ghost" id="vrVoiceToggle" type="button">🔊 Voice: ON</button>
+        <button class="vr-btn vr-ghost" id="vrReset" type="button">↺ Reset</button>
+      </div>
+      <form class="vr-form" id="vrForm">
+        <div class="vr-grid">
+          <input class="vr-in" name="name" id="vrName" placeholder="Your name" required />
+          <input class="vr-in" name="email" id="vrEmail" placeholder="Your email" type="email" required />
+          <input class="vr-in" name="budget" id="vrBudget" placeholder="Budget (optional)" />
+        </div>
+        <textarea class="vr-in vr-ta" name="message" id="vrMessage" placeholder="What do you need? (project details)" required></textarea>
+        <input type="hidden" name="source" value="Portfolio Voice Receptionist" />
+        <input type="hidden" name="page" id="vrPage" />
+        <button class="vr-send" type="submit">Send to Miraj (Email)</button>
+        <div class="vr-note" id="vrNote"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="voice-bot.js"></script>
+</body>
+</html>
